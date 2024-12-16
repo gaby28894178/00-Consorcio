@@ -1,0 +1,116 @@
+.dep{
+    font-size: 32px;
+    color: rgb(242, 248, 253);
+    margin: 0em 0.2em;
+}
+.header{
+    height: 14em; /* Ajusta la altura del header */
+    background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/151933808.jpg?k=31a0ecb482bbc33b77c062030ef94a2a8c37fa30580d3fca9fccc69d48d2dc34&o=&hp=1');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; /* Asegura que la imagen cubra toda el área del header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    fill: aliceblue;
+}
+.header::before {
+    content: ""; /* Crea un pseudo-elemento */
+    position: absolute; /* Posiciona el pseudo-elemento dentro del header */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit; /* Hereda el fondo de la imagen */
+    filter: blur(1px); /* Aplica el desenfoque */
+    z-index: -1; /* Envía el pseudo-elemento detrás del contenido */
+}
+.nav {
+    position: fixed; /* Fija la barra de navegación en la parte superior */
+    top: 0; /* Pegada al borde superior */
+    left: 0; /* Pegada al borde izquierdo */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    background-color: #2f3131cb; /* Fondo de la barra de navegación */
+    padding: 10px 0; /* Espaciado arriba y abajo */
+    z-index: 1000; /* Asegura que quede encima de otros elementos */
+    color: #ff9800;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Color oscuro con transparencia */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Contenedor para el título y la navegación */
+.container {
+    color: white;
+}
+
+/* Estilo del título */
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Estilo de la barra de navegación */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navbar li {
+    font-size: 1.2rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff9800; /* Color de hover (puedes cambiarlo) */
+}
+
+
+main{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    box-sizing: border-box;
+}
+
+
+/* styles.css */
+.img{
+    width: 250px;
+}
+body { 
+    font-family: Arial, sans-serif; background-color: #f0f0f0; 
+} 
+.carousel-container { 
+    position: relative; overflow: hidden; 
+} 
+.carousel { 
+    display: flex; transition: transform 0.5s ease-in-out; 
+} 
+.carousel-item { 
+    min-width: 100%; position: relative; 
+} 
+.carousel-control {
+     font-size: 24px; cursor: pointer;
+     }
+
+

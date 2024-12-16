@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body class="bg-gray-100 font-sans flex flex-col min-h-screen">
+    <header class="header bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white py-4 fixed top-0 w-full">
+        <nav class="bg-white shadow-lg fixed w-full z-50 nav bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white py-4 mb-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex items-center">
+                        <i class='bx bx-buildings dep text-2xl'></i>
+                        <a href="#" class="ml-2 text-xl font-bold text-blue-100">Mi Sitio</a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="/index.html"
+                            class="text-gray-100 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Inicio</a>
+                        <a href="productos.html"
+                            class="text-gray-100 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Productos</a>
+                        <a href="contacto.html"
+                            class="text-gray-100 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Contacto</a>
+                        <a href="nosotros.html"
+                            class="text-gray-100 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Nosotros</a>
+                    </div>
+                    <div class="md:hidden">
+                        <button id="menu-button"
+                            class="text-gray-100 hover:text-blue-600 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                    d="M4 6h16M4 12h16m-7 6h7" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden transition-all duration-300 ease-in-out">
+                <a href="#"
+                    class="block text-gray-100 hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-md text-base font-medium transition duration-300">Inicio</a>
+                <a href="#"
+                    class="block text-gray-100 hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-md text-base font-medium transition duration-300">Productos</a>
+                <a href="#"
+                    class="block text-gray-100 hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-md text-base font-medium transition duration-300">Contacto</a>
+                <a href="#"
+                    class="block text-gray-100 hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-md text-base font-medium transition duration-300">Nosotros</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mt-16 mb-16">
+
+        <section class="mb-16">
+            <hr class="mt-12">
+            <h1  >Seccion 1</h1>
+            <div class="mt-12">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus voluptatum
+                    esse cumque dolore, quam similique neque iste dolor quos ex commodi amet aliquam est fugiat
+                    accusantium libero doloribus deserunt fuga!</p>
+                <hr><br>
+            </div>
+            <article>
+                <h2>articulo 1</h2>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est reiciendis voluptate optio nam
+                        veniam itaque perferendis temporibus sapiente repellat, incidunt quo libero repudiandae
+                        consequuntur quos ducimus dolores provident, ad eveniet!</p>
+                </div>
+
+
+
+            </article>
+        </section>
+     
+        <section >
+            <h2>SECCION Parrafos</h2>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur accusantium alias necessitatibus? Quibusdam, obcaecati fugiat! Eum consequatur commodi quae voluptatibus mollitia quas earum veniam sed, aspernatur nemo neque nihil necessitatibus?</p>
+
+
+            </article>
+        </section>
+
+
+    </main>
+    <footer class="bg-gray-800 text-white py-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white py-4 mt-auto"> 
+        <ul class="flex justify-center space-x-6"> 
+            <li><a href="#" class="hover:underline">Facebook</a></li> 
+            <li><a href="#" class="hover:underline">Twitter</a>
+            </li> <li><a href="#" class="hover:underline">WhatsApp</a></li> 
+            </li> <li><a href="#" class="hover:underline">Telefonos</a></li> 
+        </ul> </footer>
+    <script src="scripts.js" defer></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
