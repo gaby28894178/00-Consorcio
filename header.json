@@ -1,0 +1,17 @@
+[
+    {
+        "image": "/img/1.jpg",
+        "title": "Title 1",
+        "paragraph": "This is the first paragraph."
+    },
+    {
+        "image": "/img/2.jpg",
+        "title": "Title 2",
+        "paragraph": "This is the second paragraph."
+    },
+    {
+        "image": "/img/3.jpg",
+        "title": "Title 3",
+        "paragraph": "This is the third paragraph."
+    }
+]

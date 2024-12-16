@@ -9,33 +9,43 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" ></script>
+    <script src="scripts.js"></script>
+   
 </head>
 
 
 <body class="bg-gray-100 font-sans flex flex-col min-h-screen">
 
+
     <header class="header bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white py-4">
-        <nav class="bg-white shadow-lg fixed w-full z-50 nav bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white py-5 ">
+        <nav class="bg-white shadow-lg fixed w-full z-50 nav bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white py-4 mb-16">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex items-center justify-between h-16">
                     <div class="flex items-center">
-                        <i class='bx bx-buildings dep text-2xl'></i>
-                        <a href="#" class="ml-2 text-xl font-bold text-blue-100">Mi Sitio</a>
+                        <a href="index.html">
+                            <i class='bx bx-buildings dep text-2xl'></i>
+                            </a>
+                        <a href="index.html" class="ml-2 text-xl font-bold text-blue-100">Mi Sitio</a>
                     </div>
                     <div class="hidden md:flex items-center space-x-8">
-                        <a href="#"
+                        <a href="index.html"
                             class="text-gray-100 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Inicio</a>
-                        <a href="#"
+                        <a href="productos.html"
                             class="text-gray-100 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Productos</a>
-                        <a href="#"
+                        <a href="contacto.html"
                             class="text-gray-100 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Contacto</a>
-                        <a href="#"
+                        <a href="nosotros.html"
                             class="text-gray-100 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Nosotros</a>
+                        <a href="registro_usuario.html"
+                          class="text-gray-100 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Registro</a>
+                        <a href="login.html"
+                            class="text-gray-100 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Login</a>
                     </div>
                     <div class="md:hidden">
                         <button id="menu-button"
-                            class="text-white hover:text-blue-600 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                            class="text-gray-100 hover:text-blue-600 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
                             <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
@@ -46,14 +56,18 @@
                 </div>
             </div>
             <div id="mobile-menu" class="hidden md:hidden transition-all duration-300 ease-in-out">
-                <a href="#"
+                <a href="index.html"
                     class="block text-gray-100 hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-md text-base font-medium transition duration-300">Inicio</a>
-                <a href="#"
+                <a href="productos.html"
                     class="block text-gray-100 hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-md text-base font-medium transition duration-300">Productos</a>
-                <a href="#"
+                <a href="contacto.html"
                     class="block text-gray-100 hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-md text-base font-medium transition duration-300">Contacto</a>
-                <a href="#"
+                <a href="nosotros.html"
                     class="block text-gray-100 hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-md text-base font-medium transition duration-300">Nosotros</a>
+                    <a href="registro_usuario.html"
+                          class="text-gray-100 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Registro</a>
+                        <a href="login.html"
+                            class="text-gray-100 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Login</a>
             </div>
         </nav>
     </header>
@@ -65,15 +79,20 @@
            
             <div class="flex flex-col w-full md:w-1/2 xl:w-2/5 2xl:w-2/5 3xl:w-1/3 mx-auto p-8 md:p-10 2xl:p-12 3xl:p-14 bg-[#ffffff] rounded-2xl shadow-xl">
                 <div class="flex flex-row gap-3 pb-4">
-                    <div>
-                        <img src="/favicon.svg" alt="Logo" width="50">
-                    </div>
+                    <!-- <div>
+                        <img src="/favicon.svg" alt="Logo" width="50">. 
+                        <a href="index.html">
+                        </a>
+                        
+                    </div> -->
+                    <img class="logo" src="https://static.vecteezy.com/system/resources/previews/008/326/104/non_2x/real-estate-building-logo-icon-design-free-vector.jpg" alt="logo">
+              
                     <!---->
-                     <h1 class="text-3xl font-bold text-[#4B5563] text-[#4B5563] my-auto">Your Company</h1>
+                     <h1 class="text-3xl font-bold text-[#4B5563] text-[#4B5563] my-auto ml-8">Your Company</h1>
             
                 </div>
                 <div class="text-sm font-light text-[#6B7280] pb-8 ">Login to your account on Your Company.</div>
-                <!---->
+               
                 <form class="flex flex-col">
                     <div class="pb-2">
                         <label for="email" class="block mb-2 text-sm font-medium text-[#111827]">Email</label>
@@ -127,8 +146,8 @@
             </li> <li><a href="#" class="hover:underline">WhatsApp</a></li> 
             </li> <li><a href="#" class="hover:underline">Telefonos</a></li> 
         </ul> </footer>
-    <script src="/scripts.js" defer></script>
-    <script src="/js/script.js"></script>
+    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
